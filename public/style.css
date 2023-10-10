@@ -1,0 +1,72 @@
+/* Reset some default styles */
+body,
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Added for positioning the delete button */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Add some spacing and styling for the blog post elements */
+ul#post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  flex: 0 0 calc(33.33% - 40px);
+  max-width: calc(33.33% - 40px);
+}
+
+@media (max-width: 768px) {
+  li {
+    flex: 0 0 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+/* Styling for the delete button */
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
